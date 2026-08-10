@@ -1,282 +1,349 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+/* =========================================================
+   MILLER TREE & GROUND SERVICES
+   MAIN JAVASCRIPT
+========================================================= */
 
 
-// =========================
-// MOBILE MENU
-// =========================
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
 
-if (menuToggle && nav) {
+const mobileMenuButton =
+    document.querySelector(".mobile-menu-button");
 
-  menuToggle.addEventListener("click", () => {
+const mobileNavigation =
+    document.querySelector(".mobile-navigation");
 
-    const isOpen = nav.classList.toggle("open");
 
-    menuToggle.setAttribute(
-      "aria-expanded",
-      isOpen
+if (
+    mobileMenuButton &&
+    mobileNavigation
+) {
+
+    mobileMenuButton.addEventListener(
+        "click",
+        () => {
+
+            const isOpen =
+                mobileNavigation.classList.toggle(
+                    "open"
+                );
+
+            mobileMenuButton.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            document.body.classList.toggle(
+                "menu-open",
+                isOpen
+            );
+
+        }
     );
-
-    document.body.classList.toggle(
-      "menu-open",
-      isOpen
-    );
-
-  });
 
 }
 
 
-// Close mobile menu when clicking a navigation link
+/* =========================================================
+   CLOSE MOBILE MENU WHEN LINK IS CLICKED
+========================================================= */
 
-document.querySelectorAll(".nav a").forEach((link) => {
+document
+    .querySelectorAll(".mobile-navigation a")
+    .forEach((link) => {
 
-  link.addEventListener("click", () => {
+        link.addEventListener(
+            "click",
+            () => {
 
-    nav?.classList.remove("open");
+                mobileNavigation?.classList.remove(
+                    "open"
+                );
 
-    menuToggle?.setAttribute(
-      "aria-expanded",
-      "false"
-    );
+                mobileMenuButton?.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
 
-    document.body.classList.remove(
-      "menu-open"
-    );
+                document.body.classList.remove(
+                    "menu-open"
+                );
 
-  });
+            }
+        );
 
-});
-
-
-
-// =========================
-// IMAGE LIGHTBOX
-// =========================
-
-const lightbox =
-  document.getElementById("lightbox");
-
-const lightboxImage =
-  document.getElementById("lightboxImage");
-
-const lightboxClose =
-  document.querySelector(".lightbox-close");
+    });
 
 
-document.querySelectorAll(".gallery-item").forEach((item) => {
+/* =========================================================
+   CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+========================================================= */
 
-  item.addEventListener("click", () => {
-
-    const image =
-      item.querySelector("img");
-
-    const fullImage =
-      item.dataset.full;
-
-    if (!lightbox || !lightboxImage) {
-      return;
-    }
-
-    lightboxImage.src =
-      fullImage;
-
-    lightboxImage.alt =
-      image ? image.alt : "";
-
-    lightbox.classList.add("open");
-
-    lightbox.setAttribute(
-      "aria-hidden",
-      "false"
-    );
-
-    document.body.classList.add(
-      "menu-open"
-    );
-
-  });
-
-});
-
-
-// Close lightbox
-
-function closeLightbox() {
-
-  if (!lightbox) {
-    return;
-  }
-
-  lightbox.classList.remove(
-    "open"
-  );
-
-  lightbox.setAttribute(
-    "aria-hidden",
-    "true"
-  );
-
-  if (lightboxImage) {
-    lightboxImage.src = "";
-  }
-
-  document.body.classList.remove(
-    "menu-open"
-  );
-
-}
-
-
-if (lightboxClose) {
-
-  lightboxClose.addEventListener(
-    "click",
-    closeLightbox
-  );
-
-}
-
-
-if (lightbox) {
-
-  lightbox.addEventListener(
+document.addEventListener(
     "click",
     (event) => {
 
-      if (
-        event.target === lightbox
-      ) {
-        closeLightbox();
-      }
+        if (
+            !mobileNavigation ||
+            !mobileMenuButton
+        ) {
+            return;
+        }
+
+
+        const clickedInsideMenu =
+            mobileNavigation.contains(
+                event.target
+            );
+
+
+        const clickedMenuButton =
+            mobileMenuButton.contains(
+                event.target
+            );
+
+
+        if (
+            !clickedInsideMenu &&
+            !clickedMenuButton
+        ) {
+
+            mobileNavigation.classList.remove(
+                "open"
+            );
+
+            mobileMenuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            document.body.classList.remove(
+                "menu-open"
+            );
+
+        }
 
     }
-  );
-
-}
-
-
-
-// =========================
-// ESCAPE KEY
-// =========================
-
-document.addEventListener(
-  "keydown",
-  (event) => {
-
-    if (event.key === "Escape") {
-
-      closeLightbox();
-
-      nav?.classList.remove(
-        "open"
-      );
-
-      menuToggle?.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-
-      document.body.classList.remove(
-        "menu-open"
-      );
-
-    }
-
-  }
 );
 
 
+/* =========================================================
+   ESCAPE KEY
+========================================================= */
 
-// =========================
-// FREE QUOTE FORM
-// =========================
-
-const quoteForm =
-  document.getElementById("quoteForm");
-
-
-if (quoteForm) {
-
-  quoteForm.addEventListener(
-    "submit",
+document.addEventListener(
+    "keydown",
     (event) => {
 
-      event.preventDefault();
+        if (
+            event.key === "Escape"
+        ) {
 
+            mobileNavigation?.classList.remove(
+                "open"
+            );
 
-      const name =
-        document
-          .getElementById("name")
-          ?.value
-          .trim();
+            mobileMenuButton?.setAttribute(
+                "aria-expanded",
+                "false"
+            );
 
+            document.body.classList.remove(
+                "menu-open"
+            );
 
-      const phone =
-        document
-          .getElementById("phone")
-          ?.value
-          .trim();
-
-
-      const service =
-        document
-          .getElementById("service")
-          ?.value;
-
-
-      const details =
-        document
-          .getElementById("details")
-          ?.value
-          .trim();
-
-
-      const subject =
-        encodeURIComponent(
-          `Free quote enquiry - ${service}`
-        );
-
-
-      const body =
-        encodeURIComponent(
-`Hello Adam,
-
-I'd like to request a free no-obligation quote.
-
-Name: ${name}
-Phone: ${phone}
-Service: ${service}
-
-Job details:
-${details || "No additional details provided."}
-
-Thanks.`
-        );
-
-
-      window.location.href =
-        `mailto:millertreeandgroundinfo@gmail.com?subject=${subject}&body=${body}`;
+        }
 
     }
-  );
+);
+
+
+/* =========================================================
+   SMOOTH SCROLL
+========================================================= */
+
+document
+    .querySelectorAll('a[href^="#"]')
+    .forEach((link) => {
+
+        link.addEventListener(
+            "click",
+            (event) => {
+
+                const targetId =
+                    link.getAttribute("href");
+
+
+                if (
+                    !targetId ||
+                    targetId === "#"
+                ) {
+                    return;
+                }
+
+
+                const target =
+                    document.querySelector(
+                        targetId
+                    );
+
+
+                if (!target) {
+                    return;
+                }
+
+
+                event.preventDefault();
+
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   HEADER SHADOW WHEN SCROLLING
+========================================================= */
+
+const header =
+    document.querySelector(".site-header");
+
+
+function updateHeader() {
+
+    if (!header) {
+        return;
+    }
+
+
+    if (window.scrollY > 20) {
+
+        header.style.boxShadow =
+            "0 10px 35px rgba(0,0,0,0.30)";
+
+    } else {
+
+        header.style.boxShadow =
+            "none";
+
+    }
 
 }
 
 
-
-// =========================
-// CURRENT YEAR
-// =========================
-
-const year =
-  document.getElementById("year");
+window.addEventListener(
+    "scroll",
+    updateHeader
+);
 
 
-if (year) {
+updateHeader();
 
-  year.textContent =
-    new Date().getFullYear();
+
+/* =========================================================
+   SIMPLE FADE-IN ANIMATIONS
+========================================================= */
+
+const animatedElements =
+    document.querySelectorAll(
+        ".home-service-card, .why-item, .featured-work-placeholder"
+    );
+
+
+if (
+    "IntersectionObserver" in window
+) {
+
+    const observer =
+        new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach(
+                    (entry) => {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    animatedElements.forEach(
+        (element) => {
+
+            observer.observe(
+                element
+            );
+
+        }
+    );
 
 }
+
+
+/* =========================================================
+   PHONE NUMBER CLICK TRACKING
+========================================================= */
+
+document
+    .querySelectorAll('a[href^="tel:"]')
+    .forEach((phoneLink) => {
+
+        phoneLink.addEventListener(
+            "click",
+            () => {
+
+                console.log(
+                    "Phone enquiry started"
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   EMAIL LINK TRACKING
+========================================================= */
+
+document
+    .querySelectorAll('a[href^="mailto:"]')
+    .forEach((emailLink) => {
+
+        emailLink.addEventListener(
+            "click",
+            () => {
+
+                console.log(
+                    "Email enquiry started"
+                );
+
+            }
+        );
+
+    });
