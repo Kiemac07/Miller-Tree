@@ -26,7 +26,7 @@
 
     <link
         rel="preconnect"
-        href="https://fonts.googleapis.com"
+        href="https://fonts.gstatic.com"
         crossorigin
     >
 
@@ -46,9 +46,7 @@
 <body>
 
 
-    <!-- =========================
-         TOP BAR
-    ========================== -->
+    <!-- TOP BAR -->
 
     <div class="top-bar">
 
@@ -68,9 +66,7 @@
 
 
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+    <!-- HEADER -->
 
     <header class="site-header">
 
@@ -101,8 +97,6 @@
             </a>
 
 
-
-            <!-- DESKTOP NAVIGATION -->
 
             <nav class="desktop-navigation">
 
@@ -137,8 +131,6 @@
 
 
 
-            <!-- MOBILE MENU -->
-
             <button
                 class="mobile-menu-button"
                 aria-label="Open navigation menu"
@@ -156,7 +148,7 @@
 
 
 
-        <!-- MOBILE NAVIGATION -->
+        <!-- MOBILE NAV -->
 
         <nav class="mobile-navigation">
 
@@ -196,9 +188,7 @@
     <main>
 
 
-        <!-- =========================
-             PAGE HERO
-        ========================== -->
+        <!-- PAGE HERO -->
 
         <section class="page-hero quote-page-hero">
 
@@ -232,18 +222,14 @@
 
 
 
-        <!-- =========================
-             QUOTE SECTION
-        ========================== -->
+        <!-- QUOTE SECTION -->
 
         <section class="quote-section">
 
             <div class="site-container quote-grid">
 
 
-                <!-- =========================
-                     FORM
-                ========================== -->
+                <!-- FORM -->
 
                 <div class="quote-form-wrapper">
 
@@ -277,7 +263,9 @@
 
 
 
-                    <!-- FORM -->
+                    <!-- =================================
+                         FORM SUBMIT
+                    ================================== -->
 
                     <form
                         id="quoteForm"
@@ -288,7 +276,7 @@
                     >
 
 
-                        <!-- FORM SETTINGS -->
+                        <!-- FormSubmit settings -->
 
                         <input
                             type="hidden"
@@ -307,17 +295,28 @@
                             name="_captcha"
                             value="true"
                         >
+
+                        <!-- IMPORTANT:
+                             Customer is redirected here after submission -->
+
                         <input
-    type="hidden"
-    name="_next"
-    value="https://kiemac07.github.io/Miller-Tree/thank-you.html"
->
+                            type="hidden"
+                            name="_next"
+                            value="https://kiemac07.github.io/Miller-Tree/thank-you.html"
+                        >
+
+                        <!-- Lets FormSubmit know the page
+                             the enquiry came from -->
+
+                        <input
+                            type="hidden"
+                            name="_url"
+                            value="https://kiemac07.github.io/Miller-Tree/quote.html"
+                        >
 
 
 
-                        <!-- =========================
-                             CUSTOMER NAME
-                        ========================== -->
+                        <!-- NAME -->
 
                         <div class="form-group">
 
@@ -344,9 +343,7 @@
 
 
 
-                        <!-- =========================
-                             PHONE
-                        ========================== -->
+                        <!-- PHONE -->
 
                         <div class="form-group">
 
@@ -373,9 +370,7 @@
 
 
 
-                        <!-- =========================
-                             EMAIL
-                        ========================== -->
+                        <!-- EMAIL -->
 
                         <div class="form-group">
 
@@ -392,7 +387,7 @@
                             <input
                                 type="email"
                                 id="quoteEmail"
-                                name="Customer Email"
+                                name="email"
                                 placeholder="your@email.com"
                                 autocomplete="email"
                                 required
@@ -402,9 +397,7 @@
 
 
 
-                        <!-- =========================
-                             LOCATION
-                        ========================== -->
+                        <!-- LOCATION -->
 
                         <div class="form-group">
 
@@ -431,9 +424,7 @@
 
 
 
-                        <!-- =========================
-                             CUSTOMER TYPE
-                        ========================== -->
+                        <!-- CUSTOMER TYPE -->
 
                         <div class="form-group">
 
@@ -495,9 +486,7 @@
 
 
 
-                        <!-- =========================
-                             SERVICE
-                        ========================== -->
+                        <!-- SERVICE -->
 
                         <div class="form-group">
 
@@ -567,9 +556,7 @@
 
 
 
-                        <!-- =========================
-                             JOB DESCRIPTION
-                        ========================== -->
+                        <!-- JOB DESCRIPTION -->
 
                         <div class="form-group">
 
@@ -595,9 +582,7 @@
 
 
 
-                        <!-- =========================
-                             PHOTOS
-                        ========================== -->
+                        <!-- PHOTOS -->
 
                         <div class="form-group">
 
@@ -614,7 +599,6 @@
 
                             <div class="file-upload-box">
 
-
                                 <input
                                     type="file"
                                     id="quotePhotos"
@@ -630,20 +614,17 @@
                                         +
                                     </div>
 
-
                                     <strong>
                                         ATTACH PHOTOS
                                     </strong>
 
-
                                     <span>
-                                        Click here to choose
-                                        photos from your device
+                                        Click here to choose photos
+                                        from your device
                                     </span>
 
-
                                     <small>
-                                        You can select multiple images
+                                        Multiple images can be selected
                                     </small>
 
                                 </div>
@@ -651,21 +632,16 @@
                             </div>
 
 
-                            <!-- PHOTO PREVIEW -->
-
                             <div
                                 id="photoPreview"
                                 class="photo-preview"
                             ></div>
 
-
                         </div>
 
 
 
-                        <!-- =========================
-                             SUBMIT
-                        ========================== -->
+                        <!-- SUBMIT -->
 
                         <button
                             type="submit"
@@ -697,21 +673,16 @@
 
 
 
-                <!-- =========================
-                     SIDEBAR
-                ========================== -->
+                <!-- SIDEBAR -->
 
                 <aside class="quote-sidebar">
 
-
-                    <!-- CONTACT -->
 
                     <div class="quote-contact-card">
 
                         <div class="section-label">
                             GET IN TOUCH
                         </div>
-
 
                         <h2>
 
@@ -722,7 +693,6 @@
                             </span>
 
                         </h2>
-
 
                         <p>
 
@@ -763,8 +733,6 @@
 
 
 
-                    <!-- FREE QUOTE -->
-
                     <div class="quote-side-card">
 
                         <div class="quote-side-icon">
@@ -787,8 +755,6 @@
 
 
 
-                    <!-- PHOTOS -->
-
                     <div class="quote-side-card">
 
                         <div class="quote-side-icon">
@@ -810,8 +776,6 @@
                     </div>
 
 
-
-                    <!-- DOMESTIC / COMMERCIAL -->
 
                     <div class="quote-side-card">
 
@@ -842,9 +806,7 @@
 
 
 
-        <!-- =========================
-             PROCESS
-        ========================== -->
+        <!-- PROCESS -->
 
         <section class="quote-process">
 
@@ -941,9 +903,7 @@
 
 
 
-        <!-- =========================
-             FINAL CTA
-        ========================== -->
+        <!-- FINAL CTA -->
 
         <section class="home-cta">
 
@@ -998,9 +958,7 @@
 
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- FOOTER -->
 
     <footer class="site-footer">
 
@@ -1268,7 +1226,6 @@
 
                     photoPreview.innerHTML = "";
 
-
                     const files =
                         Array.from(
                             photoInput.files
@@ -1339,7 +1296,7 @@
 
 
         /* =========================
-           FORM SUBMIT
+           SUBMIT BUTTON
         ========================== */
 
         const quoteForm =
@@ -1378,7 +1335,7 @@
 
 
         /* =========================
-           HEADER SCROLL EFFECT
+           HEADER SHADOW
         ========================== */
 
         const header =
