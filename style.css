@@ -5900,3 +5900,663 @@ img {
     }
 
 }
+/* =========================================================
+   THANK YOU PAGE
+========================================================= */
+
+.thank-you-page {
+
+    min-height: 100vh;
+
+    background:
+        #090b08;
+
+}
+
+
+.thank-you-section {
+
+    min-height:
+        calc(100vh - 90px);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        100px 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(95,189,49,0.10),
+            transparent 38%
+        ),
+        #090b08;
+
+}
+
+
+.thank-you-card {
+
+    width:
+        min(900px, 100%);
+
+    min-height:
+        560px;
+
+    margin:
+        0 auto;
+
+    padding:
+        75px 90px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #171c16,
+            #0e110d
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    border-radius:
+        14px;
+
+    box-shadow:
+        0 35px 100px
+        rgba(0,0,0,0.45);
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+}
+
+
+.thank-you-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        500px;
+
+    height:
+        500px;
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid
+        rgba(255,121,0,0.08);
+
+    top:
+        -300px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+}
+
+
+.thank-you-icon {
+
+    width:
+        82px;
+
+    height:
+        82px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(95,189,49,0.14);
+
+    border:
+        1px solid
+        rgba(95,189,49,0.35);
+
+    color:
+        var(--green-light);
+
+    font-size:
+        38px;
+
+    font-weight:
+        800;
+
+    margin-bottom:
+        30px;
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+}
+
+
+.thank-you-card .section-label {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+}
+
+
+.thank-you-card h1 {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    max-width:
+        800px;
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        clamp(65px, 7vw, 100px);
+
+    line-height:
+        0.82;
+
+    text-transform:
+        uppercase;
+
+    margin:
+        15px 0 30px;
+
+}
+
+
+.thank-you-card h1 span {
+
+    display:
+        block;
+
+    color:
+        var(--orange);
+
+}
+
+
+.thank-you-card > p {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    max-width:
+        590px;
+
+    color:
+        var(--grey-light);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.7;
+
+    margin:
+        0 0 8px;
+
+}
+
+
+.thank-you-actions {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        12px;
+
+    margin-top:
+        32px;
+
+}
+
+
+.thank-you-secondary-button {
+
+    min-height:
+        52px;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        0 24px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.15);
+
+    border-radius:
+        5px;
+
+    color:
+        var(--grey-light);
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    text-transform:
+        uppercase;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.thank-you-secondary-button:hover {
+
+    border-color:
+        var(--orange);
+
+    color:
+        var(--orange);
+
+}
+
+
+.thank-you-contact {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    margin-top:
+        45px;
+
+    padding-top:
+        22px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    width:
+        100%;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        5px;
+
+}
+
+
+.thank-you-contact strong {
+
+    color:
+        var(--orange);
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        23px;
+
+    letter-spacing:
+        0.04em;
+
+}
+
+
+.thank-you-contact span {
+
+    color:
+        var(--grey);
+
+    font-size:
+        9px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.16em;
+
+}
+
+
+/* =========================================================
+   DESKTOP / LAPTOP IMPROVEMENTS
+========================================================= */
+
+@media (min-width: 1100px) {
+
+
+    .site-container {
+
+        max-width:
+            1380px;
+
+    }
+
+
+    .quote-section .site-container {
+
+        max-width:
+            1320px;
+
+    }
+
+
+    .quote-grid {
+
+        grid-template-columns:
+            minmax(0, 1.5fr)
+            minmax(330px, 0.5fr);
+
+        gap:
+            85px;
+
+    }
+
+
+    .quote-form-wrapper {
+
+        padding:
+            10px 0;
+
+    }
+
+
+    .quote-form {
+
+        column-gap:
+            22px;
+
+        row-gap:
+            22px;
+
+    }
+
+
+    .form-group input,
+    .form-group select {
+
+        min-height:
+            54px;
+
+    }
+
+
+    .form-group textarea {
+
+        min-height:
+            210px;
+
+    }
+
+
+    .file-upload-box {
+
+        min-height:
+            220px;
+
+    }
+
+
+    .quote-submit-button {
+
+        min-height:
+            60px;
+
+        font-size:
+            13px;
+
+    }
+
+
+    .quote-sidebar {
+
+        top:
+            130px;
+
+    }
+
+
+    .quote-contact-card {
+
+        padding:
+            38px;
+
+    }
+
+
+    .quote-side-card {
+
+        padding:
+            28px;
+
+    }
+
+
+    .process-grid {
+
+        gap:
+            22px;
+
+    }
+
+
+    .process-step {
+
+        padding:
+            38px;
+
+        min-height:
+            230px;
+
+    }
+
+
+    .thank-you-section {
+
+        min-height:
+            calc(100vh - 90px);
+
+    }
+
+
+    .thank-you-card {
+
+        min-height:
+            600px;
+
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1450px) {
+
+    .thank-you-card {
+
+        width:
+            950px;
+
+    }
+
+    .thank-you-card h1 {
+
+        font-size:
+            105px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE THANK YOU PAGE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .thank-you-section {
+
+        min-height:
+            auto;
+
+        padding:
+            70px 20px;
+
+    }
+
+
+    .thank-you-card {
+
+        min-height:
+            auto;
+
+        padding:
+            55px 25px;
+
+    }
+
+
+    .thank-you-icon {
+
+        width:
+            68px;
+
+        height:
+            68px;
+
+        font-size:
+            30px;
+
+    }
+
+
+    .thank-you-card h1 {
+
+        font-size:
+            60px;
+
+    }
+
+
+    .thank-you-card > p {
+
+        font-size:
+            12px;
+
+    }
+
+
+    .thank-you-actions {
+
+        flex-direction:
+            column;
+
+        width:
+            100%;
+
+    }
+
+
+    .thank-you-actions a {
+
+        width:
+            100%;
+
+    }
+
+
+    .thank-you-contact {
+
+        margin-top:
+            35px;
+
+    }
+
+}
