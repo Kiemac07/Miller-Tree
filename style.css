@@ -6560,3 +6560,997 @@ img {
     }
 
 }
+/* =========================================================
+   MILLER TREE & GROUND
+   NEW QUOTE / WHATSAPP SYSTEM
+========================================================= */
+
+
+/* =========================
+   QUOTE INTRO
+========================= */
+
+.quote-page-intro {
+
+    padding:
+        100px 0 80px;
+
+    background:
+        #090b08;
+
+    text-align:
+        center;
+
+}
+
+
+.quote-page-intro .section-label {
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.quote-page-intro h1 {
+
+    margin:
+        0 auto 25px;
+
+    max-width:
+        1000px;
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        clamp(60px, 7vw, 105px);
+
+    line-height:
+        0.85;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.quote-page-intro h1 span {
+
+    display:
+        block;
+
+    color:
+        var(--orange);
+
+}
+
+
+.quote-page-intro p {
+
+    max-width:
+        620px;
+
+    margin:
+        0 auto;
+
+    color:
+        var(--grey-light);
+
+    line-height:
+        1.7;
+
+}
+
+
+/* =========================
+   DESKTOP QUOTE AREA
+========================= */
+
+.desktop-quote-area {
+
+    display:
+        block;
+
+    padding:
+        70px 0 110px;
+
+    background:
+        #0d100c;
+
+}
+
+
+.desktop-quote-card {
+
+    min-height:
+        590px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 0.85fr;
+
+    align-items:
+        center;
+
+    gap:
+        80px;
+
+    padding:
+        70px 90px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #171c16,
+            #0c0f0b
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    border-radius:
+        12px;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,0.35);
+
+}
+
+
+.desktop-quote-copy {
+
+    max-width:
+        650px;
+
+}
+
+
+.desktop-quote-copy h2 {
+
+    margin:
+        15px 0 25px;
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        clamp(65px, 6vw, 100px);
+
+    line-height:
+        0.84;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.desktop-quote-copy h2 span {
+
+    display:
+        block;
+
+    color:
+        var(--orange);
+
+}
+
+
+.desktop-quote-copy p {
+
+    max-width:
+        560px;
+
+    color:
+        var(--grey-light);
+
+    line-height:
+        1.7;
+
+    font-size:
+        15px;
+
+}
+
+
+.desktop-quote-small {
+
+    margin-top:
+        15px;
+
+    color:
+        var(--grey) !important;
+
+    font-size:
+        13px !important;
+
+}
+
+
+.desktop-quote-benefits {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        12px;
+
+    margin-top:
+        30px;
+
+}
+
+
+.desktop-quote-benefits div {
+
+    padding:
+        10px 15px;
+
+    border:
+        1px solid
+        rgba(95,189,49,0.25);
+
+    border-radius:
+        4px;
+
+    color:
+        #b7ef98;
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+/* =========================
+   QR CODE
+========================= */
+
+.desktop-qr-area {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+}
+
+
+.qr-frame {
+
+    width:
+        360px;
+
+    height:
+        360px;
+
+    padding:
+        20px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    background:
+        #ffffff;
+
+    border:
+        8px solid
+        var(--orange);
+
+    border-radius:
+        8px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,0.45);
+
+}
+
+
+.qr-frame img {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        contain;
+
+}
+
+
+.qr-title {
+
+    margin-top:
+        28px;
+
+    color:
+        #ffffff;
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        32px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.04em;
+
+}
+
+
+.qr-subtitle {
+
+    margin-top:
+        5px;
+
+    color:
+        var(--orange);
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.18em;
+
+}
+
+
+/* =========================
+   MOBILE QUOTE AREA
+========================= */
+
+.mobile-quote-area {
+
+    display:
+        none;
+
+    padding:
+        65px 0 80px;
+
+    background:
+        #0d100c;
+
+}
+
+
+.mobile-quote-heading {
+
+    margin-bottom:
+        35px;
+
+}
+
+
+.mobile-quote-heading h2 {
+
+    margin:
+        12px 0 20px;
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        60px;
+
+    line-height:
+        0.85;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.mobile-quote-heading h2 span {
+
+    display:
+        block;
+
+    color:
+        var(--orange);
+
+}
+
+
+.mobile-quote-heading p {
+
+    color:
+        var(--grey-light);
+
+    line-height:
+        1.65;
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================
+   MOBILE FORM
+========================= */
+
+.whatsapp-quote-form {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        20px;
+
+}
+
+
+.whatsapp-quote-form .form-group {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        8px;
+
+}
+
+
+.whatsapp-quote-form label {
+
+    color:
+        #ffffff;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.whatsapp-quote-form label span {
+
+    color:
+        var(--orange);
+
+}
+
+
+.whatsapp-quote-form input,
+.whatsapp-quote-form select,
+.whatsapp-quote-form textarea {
+
+    width:
+        100%;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    border-radius:
+        5px;
+
+    background:
+        #171c16;
+
+    color:
+        #ffffff;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        14px;
+
+    outline:
+        none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.whatsapp-quote-form input,
+.whatsapp-quote-form select {
+
+    min-height:
+        55px;
+
+    padding:
+        0 16px;
+
+}
+
+
+.whatsapp-quote-form textarea {
+
+    min-height:
+        190px;
+
+    padding:
+        16px;
+
+    resize:
+        vertical;
+
+}
+
+
+.whatsapp-quote-form input:focus,
+.whatsapp-quote-form select:focus,
+.whatsapp-quote-form textarea:focus {
+
+    border-color:
+        var(--orange);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(255,121,0,0.10);
+
+}
+
+
+.whatsapp-quote-form input::placeholder,
+.whatsapp-quote-form textarea::placeholder {
+
+    color:
+        #737871;
+
+}
+
+
+/* =========================
+   PHOTO MESSAGE
+========================= */
+
+.whatsapp-photo-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+        rgba(95,189,49,0.07);
+
+    border:
+        1px solid
+        rgba(95,189,49,0.20);
+
+    border-radius:
+        6px;
+
+}
+
+
+.whatsapp-photo-icon {
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    flex:
+        0 0 45px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(95,189,49,0.12);
+
+    font-size:
+        20px;
+
+}
+
+
+.whatsapp-photo-box strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        4px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+}
+
+
+.whatsapp-photo-box p {
+
+    margin:
+        0;
+
+    color:
+        var(--grey-light);
+
+    font-size:
+        11px;
+
+    line-height:
+        1.5;
+
+}
+
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp-submit-button {
+
+    width:
+        100%;
+
+    min-height:
+        62px;
+
+    border:
+        0;
+
+    border-radius:
+        5px;
+
+    background:
+        #25D366;
+
+    color:
+        #ffffff;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.04em;
+
+    cursor:
+        pointer;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+
+}
+
+
+.whatsapp-submit-button span {
+
+    margin-left:
+        10px;
+
+    font-size:
+        18px;
+
+}
+
+
+.whatsapp-submit-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.08);
+
+}
+
+
+.whatsapp-form-note {
+
+    margin:
+        0;
+
+    color:
+        #737871;
+
+    font-size:
+        10px;
+
+    line-height:
+        1.5;
+
+    text-align:
+        center;
+
+}
+
+
+/* =========================
+   BOTTOM CTA
+========================= */
+
+.quote-bottom-cta {
+
+    padding:
+        80px 0;
+
+    background:
+        #090b08;
+
+}
+
+
+.quote-bottom-card {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    padding:
+        45px 55px;
+
+    background:
+        #171c16;
+
+    border-left:
+        4px solid
+        var(--orange);
+
+    border-radius:
+        5px;
+
+}
+
+
+.quote-bottom-card h2 {
+
+    margin:
+        8px 0 0;
+
+    font-family:
+        "Barlow Condensed",
+        sans-serif;
+
+    font-size:
+        50px;
+
+    line-height:
+        0.9;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+
+    .quote-page-intro {
+
+        padding:
+            70px 20px 55px;
+
+    }
+
+
+    .quote-page-intro h1 {
+
+        font-size:
+            60px;
+
+    }
+
+
+    /*
+     * Hide desktop QR version
+     */
+
+    .desktop-quote-area {
+
+        display:
+            none;
+
+    }
+
+
+    /*
+     * Show mobile form
+     */
+
+    .mobile-quote-area {
+
+        display:
+            block;
+
+    }
+
+
+    .quote-bottom-card {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        padding:
+            35px 25px;
+
+    }
+
+
+    .quote-bottom-card h2 {
+
+        font-size:
+            42px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (min-width: 751px) and (max-width: 1100px) {
+
+
+    .desktop-quote-card {
+
+        grid-template-columns:
+            1fr 0.8fr;
+
+        gap:
+            35px;
+
+        padding:
+            50px 45px;
+
+    }
+
+
+    .qr-frame {
+
+        width:
+            280px;
+
+        height:
+            280px;
+
+    }
+
+
+    .desktop-quote-copy h2 {
+
+        font-size:
+            70px;
+
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+
+    .desktop-quote-card {
+
+        min-height:
+            650px;
+
+        padding:
+            80px 100px;
+
+    }
+
+
+    .qr-frame {
+
+        width:
+            400px;
+
+        height:
+            400px;
+
+    }
+
+
+    .desktop-quote-copy h2 {
+
+        font-size:
+            105px;
+
+    }
+
+}
