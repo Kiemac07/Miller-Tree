@@ -8683,49 +8683,36 @@ img {
     }
 }
 /* =========================================================
-   FINAL HEADER LOGO — SAME SIZE ON HOME + ALL OTHER PAGES
+   FINAL HEADER LOGO SIZE
    ========================================================= */
 
-/* Support both logo class names used by the pages. */
-.site-logo,
 .brand-logo {
-    display: block !important;
-    width: 155px !important;
-    max-width: 155px !important;
-    height: auto !important;
-    max-height: 58px !important;
-    object-fit: contain !important;
-    flex-shrink: 0 !important;
+    display: block;
+    width: 110px;
+    height: auto;
+    max-width: 110px;
+    object-fit: contain;
 }
 
 /* Desktop */
 @media (min-width: 1051px) {
-    .site-logo,
     .brand-logo {
-        width: 155px !important;
-        max-width: 155px !important;
-        max-height: 58px !important;
+        width: 150px;
+        max-width: 150px;
     }
 }
 
-/* Mobile / tablet — match the working logo size used on the other pages. */
+/* Mobile */
 @media (max-width: 1050px) {
-    .site-logo,
     .brand-logo {
-        width: 120px !important;
-        max-width: 120px !important;
-        height: auto !important;
-        max-height: 47px !important;
+        width: 90px;
+        max-width: 90px;
     }
 }
-
-/* Small phones */
-@media (max-width: 430px) {
-    .site-logo,
-    .brand-logo {
-        width: 120px !important;
-        max-width: 120px !important;
-        height: auto !important;
-        max-height: 47px !important;
-    }
+/* HOME PAGE LOGO SIZE */
+.site-logo.home-logo {
+    width: 155px !important;
+    max-width: 155px !important;
+    height: auto !important;
+    max-height: none !important;
 }
