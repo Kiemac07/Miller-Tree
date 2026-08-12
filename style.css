@@ -202,6 +202,12 @@ img {
     flex-shrink: 0;
 
 }
+.brand-logo {
+    width: 53px;
+    height: 53px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
 .brand-logo-placeholder {
 
@@ -237,7 +243,11 @@ img {
         rgba(255,255,255,0.25);
 
 }
-
+.brand-logo {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
 .brand-text strong {
 
     display: block;
