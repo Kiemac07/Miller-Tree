@@ -1667,8 +1667,8 @@ img {
 }
 
 .footer-logo-mark {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-image: url("images/logo.png");
     background-size: contain;
     background-position: center;
@@ -4031,37 +4031,21 @@ img {
 }
 
 .about-why-card-mark {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background: var(--orange);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
 
-    width:
-        105px;
-
-    height:
-        105px;
-
-    border-radius:
-        50%;
-
-    background:
-        var(--orange);
-
-    color:
-        #111;
-
-    display:
-        grid;
-
-    place-items:
-        center;
-
-    font-family:
-        "Barlow Condensed";
-
-    font-size:
-        78px;
-
-    font-weight:
-        800;
-
+.about-why-card-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .about-why-card h3 {
