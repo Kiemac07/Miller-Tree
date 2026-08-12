@@ -8698,9 +8698,86 @@ body {
         padding-block: 50px !important;
     }
 }
-/* ================================
-   FINAL DESKTOP LOGO SIZE
-================================ */
+/* ========================================
+   FINAL MOBILE MENU + LOGO FIX
+======================================== */
+
+@media (max-width: 750px) {
+
+    /* MOBILE MENU BUTTON */
+    .mobile-menu-button {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 10001;
+    }
+
+    /* MOBILE NAVIGATION - CLOSED */
+    .mobile-navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-width: 100vw;
+        background: #080908;
+        z-index: 10000;
+        box-sizing: border-box;
+        padding: 20px 15px 30px;
+        overflow-x: hidden;
+    }
+
+    /* MOBILE NAVIGATION - OPEN */
+    .mobile-navigation.open {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    /* MENU LINKS */
+    .mobile-navigation a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px 10px;
+        text-decoration: none;
+    }
+
+    /* MOBILE LOGO */
+    .site-logo {
+        width: 155px !important;
+        height: auto !important;
+        max-width: 155px !important;
+        object-fit: contain !important;
+        display: block !important;
+    }
+
+    /* HEADER */
+    .navigation-container {
+        min-height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+/* ========================================
+   SMALL PHONE LOGO
+======================================== */
+
+@media (max-width: 430px) {
+
+    .site-logo {
+        width: 150px !important;
+        max-width: 150px !important;
+    }
+}
+
+
+/* ========================================
+   DESKTOP LOGO FIX
+======================================== */
 
 @media (min-width: 1051px) {
 
@@ -8717,38 +8794,4 @@ body {
         display: flex;
         align-items: center;
     }
-
-}
-
-
-/* ================================
-   FINAL MOBILE LOGO SIZE
-================================ */
-
-@media (max-width: 750px) {
-
-    .site-logo {
-        width: 155px !important;
-        height: auto !important;
-        max-width: 155px !important;
-        object-fit: contain !important;
-        display: block !important;
-    }
-
-    .navigation-container {
-        min-height: 88px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-}
-
-@media (max-width: 430px) {
-
-    .site-logo {
-        width: 150px !important;
-        max-width: 150px !important;
-    }
-
-}
+}`
