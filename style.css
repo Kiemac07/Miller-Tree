@@ -8710,7 +8710,9 @@ img {
     }
 }
 /* HOME PAGE LOGO SIZE */
-.home-logo {
-    width: 155px;
-    height: auto;
+.site-logo.home-logo {
+    width: 155px !important;
+    max-width: 155px !important;
+    height: auto !important;
+    max-height: none !important;
 }
