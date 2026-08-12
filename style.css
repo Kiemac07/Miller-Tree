@@ -1667,37 +1667,17 @@ img {
 }
 
 .footer-logo-mark {
-
-    width:
-        50px;
-
-    height:
-        50px;
-
-    border-radius:
-        50%;
-
-    background:
-        var(--orange);
-
-    color:
-        #111;
-
-    display:
-        grid;
-
-    place-items:
-        center;
-
-    font-family:
-        "Barlow Condensed";
-
-    font-size:
-        35px;
-
-    font-weight:
-        800;
-
+    width: 50px;
+    height: 50px;
+    background-image: url("images/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    display: block;
+    font-size: 0;
+    color: transparent;
+    flex-shrink: 0;
 }
 
 .footer-logo strong {
