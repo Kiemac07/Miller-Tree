@@ -7554,143 +7554,6 @@ img {
     }
 
 }
-/* FINAL MOBILE FIX */
-
-html,
-body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-}
-
-@media (max-width: 750px) {
-
-    .desktop-navigation {
-        display: none !important;
-    }
-
-    .mobile-menu-button {
-        display: block !important;
-    }
-
-    .site-container {
-        width: calc(100% - 30px) !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-    .navigation-container {
-        width: 100% !important;
-        height: 72px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-    }
-
-    .site-logo {
-        width: 140px !important;
-        max-width: 140px !important;
-        height: auto !important;
-        object-fit: contain !important;
-    }
-
-    /* Keep the hero inside the phone screen */
-    .hero-section,
-    .home-hero {
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow: hidden !important;
-        position: relative !important;
-    }
-
-    .hero-container {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-        display: block !important;
-        padding: 45px 0 !important;
-        overflow: hidden !important;
-    }
-
-    .hero-content {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-        position: relative !important;
-        z-index: 2 !important;
-    }
-
-    .hero-content h1 {
-        max-width: 100% !important;
-        font-size: 52px !important;
-        line-height: 0.95 !important;
-        overflow-wrap: break-word !important;
-    }
-
-    .hero-content > p {
-        width: 100% !important;
-        max-width: 100% !important;
-        font-size: 14px !important;
-        line-height: 1.6 !important;
-        box-sizing: border-box !important;
-    }
-
-    .hero-buttons {
-        width: 100% !important;
-        max-width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: stretch !important;
-        gap: 12px !important;
-        box-sizing: border-box !important;
-    }
-
-    .primary-button,
-    .secondary-button {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .mobile-navigation {
-        width: 100% !important;
-        max-width: 100vw !important;
-        box-sizing: border-box !important;
-        overflow-x: hidden !important;
-    }
-
-    /*
-       Prevent the large background/watermark artwork
-       from creating a desktop-sized layout on iPhone.
-    */
-    body::before {
-        display: none !important;
-    }
-
-    .hero-section::before,
-    .home-hero::before {
-        max-width: 100% !important;
-        overflow: hidden !important;
-    }
-}
-
-@media (max-width: 430px) {
-
-    .site-logo {
-        width: 130px !important;
-        max-width: 130px !important;
-    }
-
-    .hero-content h1 {
-        font-size: 48px !important;
-        line-height: 0.95 !important;
-    }
-
-    .hero-content > p {
-        font-size: 14px !important;
-    }
-}
 
 /* =========================================================
    MILLER TREE — HOME PAGE REPAIR + FINAL POLISH
@@ -7700,7 +7563,7 @@ body {
    ========================================================= */
 
 /* -------------------------
-   REAL HEADER LOGO
+   REAL HEADER / LOGO / MENU
    ------------------------- */
 
 .site-brand {
@@ -7710,34 +7573,155 @@ body {
     min-width: 0 !important;
 }
 
+.site-brand > a {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+}
+
 .site-logo {
-    width: 175px !important;
-    max-width: 175px !important;
+    width: 155px !important;
+    max-width: 155px !important;
     height: auto !important;
-    max-height: 62px !important;
+    max-height: 58px !important;
     object-fit: contain !important;
+    display: block !important;
+}
+
+.site-header {
+    border-bottom-color: rgba(95,189,49,.16);
+}
+
+/* Keep the real logo; the old orange M placeholder is not used by index.html. */
+.brand-logo-placeholder {
+    display: none;
+}
+
+/* Mobile menu button: three real horizontal lines. */
+.mobile-menu-button {
+    width: 44px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    display: none !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    z-index: 1002 !important;
+}
+
+.mobile-menu-button span {
+    display: block !important;
+    width: 25px !important;
+    height: 2px !important;
+    min-width: 25px !important;
+    min-height: 2px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    border-radius: 2px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 @media (max-width: 750px) {
-    .site-logo {
-        width: 150px !important;
-        max-width: 150px !important;
-        max-height: 55px !important;
-        height: auto !important;
-        object-fit: contain !important;
+
+    .navigation-container {
+        height: 70px !important;
+        min-height: 70px !important;
+        gap: 12px !important;
     }
 
     .site-brand {
-        max-width: calc(100% - 54px) !important;
-        overflow: hidden !important;
+        max-width: calc(100% - 58px) !important;
+        overflow: visible !important;
+    }
+
+    .site-logo {
+        width: 130px !important;
+        max-width: 130px !important;
+        max-height: 50px !important;
+    }
+
+    .desktop-navigation {
+        display: none !important;
+    }
+
+    .mobile-menu-button {
+        display: flex !important;
+    }
+
+    .mobile-navigation {
+        position: fixed !important;
+        top: 70px !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        min-height: calc(100vh - 70px) !important;
+        box-sizing: border-box !important;
+        padding: 42px 25px 45px !important;
+        background: #080908 !important;
+        z-index: 1001 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 22px !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        transform: translateX(100%) !important;
+        transition: transform .3s ease !important;
+        visibility: visible !important;
+    }
+
+    .mobile-navigation.open {
+        transform: translateX(0) !important;
+    }
+
+    .mobile-navigation a {
+        font-size: 35px !important;
+        line-height: .9 !important;
+    }
+
+    .mobile-navigation .mobile-quote-button {
+        font-size: 13px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Slightly stronger green presence without changing the overall dark look. */
+    .hero-section {
+        box-shadow: inset 0 1px 0 rgba(95,189,49,.06);
+    }
+
+    .service-card,
+    .why-card,
+    .customer-card {
+        border-color: rgba(95,189,49,.16);
     }
 }
 
 @media (max-width: 430px) {
+
     .site-logo {
-        width: 140px !important;
-        max-width: 140px !important;
-        max-height: 52px !important;
+        width: 120px !important;
+        max-width: 120px !important;
+        max-height: 47px !important;
+    }
+
+    .mobile-menu-button {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .mobile-menu-button span {
+        width: 24px !important;
+        min-width: 24px !important;
     }
 }
 
@@ -8696,102 +8680,5 @@ body {
 
     .home-quote-section {
         padding-block: 50px !important;
-    }
-}
-/* ========================================
-   FINAL MOBILE MENU + LOGO FIX
-======================================== */
-
-@media (max-width: 750px) {
-
-    /* MOBILE MENU BUTTON */
-    .mobile-menu-button {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        z-index: 10001;
-    }
-
-    /* MOBILE NAVIGATION - CLOSED */
-    .mobile-navigation {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        max-width: 100vw;
-        background: #080908;
-        z-index: 10000;
-        box-sizing: border-box;
-        padding: 20px 15px 30px;
-        overflow-x: hidden;
-    }
-
-    /* MOBILE NAVIGATION - OPEN */
-    .mobile-navigation.open {
-        display: flex !important;
-        flex-direction: column;
-    }
-
-    /* MENU LINKS */
-    .mobile-navigation a {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 16px 10px;
-        text-decoration: none;
-    }
-
-    /* MOBILE LOGO */
-    .site-logo {
-        width: 155px !important;
-        height: auto !important;
-        max-width: 155px !important;
-        object-fit: contain !important;
-        display: block !important;
-    }
-
-    /* HEADER */
-    .navigation-container {
-        min-height: 88px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-
-
-/* ========================================
-   SMALL PHONE LOGO
-======================================== */
-
-@media (max-width: 430px) {
-
-    .site-logo {
-        width: 150px !important;
-        max-width: 150px !important;
-    }
-}
-
-
-/* ========================================
-   DESKTOP LOGO FIX
-======================================== */
-
-@media (min-width: 1051px) {
-
-    .site-logo {
-        width: 190px !important;
-        height: auto !important;
-        max-width: 190px !important;
-        object-fit: contain !important;
-        display: block !important;
-    }
-
-    .navigation-container {
-        min-height: 100px;
-        display: flex;
-        align-items: center;
     }
 }
