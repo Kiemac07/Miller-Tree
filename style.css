@@ -8709,3 +8709,8 @@ img {
         max-width: 75px;
     }
 }
+/* HOME PAGE LOGO SIZE */
+.home-logo {
+    width: 155px;
+    height: auto;
+}
