@@ -7644,8 +7644,8 @@ img {
 
     .site-logo {
         width: 160px !important;
-        max-width: 130px !important;
-        max-height: 50px !important;
+        max-width: 160px !important;
+        max-height: 70px !important;
     }
 
     .desktop-navigation {
