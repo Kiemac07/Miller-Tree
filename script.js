@@ -347,3 +347,26 @@ document
         );
 
     });
+
+    // OUR WORK CATEGORY FILTERS
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".work-filter");
+    const workItems = document.querySelectorAll(".work-item");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.dataset.filter;
+
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            workItems.forEach(item => {
+                if (filter === "all" || item.dataset.category === filter) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+});
